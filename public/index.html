@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Selenian Protocol helps users maximize returns on digital assets through unlocking capital efficiency across IBC" />
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/normalize.min.css"> -->
+  <!-- fonts -->
+  <link href="./inter-font.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <!-- <script src="./script/load.js"></script> -->
+  <title>Selenian</title>
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+
+  </div>
+
+  <script>
+    window.onload = function () {
+      var acc = document.getElementsByClassName("accordion-button");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    }
+    window.onload = function () {
+      var slider = tns({
+        container: '#my-slider',
+        items: 1,
+        mouseDrag: true,
+        loop: false,
+        controlsContainer: '#controls',
+        prevButton: '.previous',
+        nextButton: '.next',
+        arrowKeys: true,
+        swipeAngle: 45,
+        preventScrollOnTouch: 'force',
+        nav: false,
+        responsive: {
+          768: {
+            items: 2
+          }
+        }
+      });
+    }
+    // Navigation onScroll Hide/Show
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+      if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
+        document.getElementById("navbar").classList.add("bg-color");
+      } else {
+        document.getElementById("navbar").classList.remove("bg-color");
+      }
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.navigation .dropdown .button.icon')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+        document.getElementById("navbar").classList.remove("top-0");
+      }
+    }
+  </script>
+  <!-- slider -->
+  <!-- slider -->
+</body>
+
+</html>

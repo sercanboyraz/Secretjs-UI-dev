@@ -1,0 +1,253 @@
+/* Selenian - core.css */
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+/* Basic */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+body {
+    -ms-overflow-style: scrollbar;
+}
+
+html, body {
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #ffffff;
+}
+
+img {
+    display: block;
+    /* pointer-events: none; */
+}
+
+/* Fix */
+/* button {
+  background-color: inherit;
+} */
+
+button,
+input,
+select,
+option, 
+textarea {
+	font: inherit;
+	color: inherit;
+	/* background-color: inherit; */
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}
+
+/* Helpers */
+
+/* Flex */
+
+.flex {
+    display: flex;
+}
+
+.flex.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex.center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Other */
+
+.pad {
+    padding: 40px;
+}
+.pad-half {
+    padding: 20px;
+}
+.pad-80-40 {
+    padding: 80px 40px;
+}
+
+.gap {
+    gap: 40px;
+}
+.gap-half {
+    gap: 20px;
+}
+
+.max-w {
+	  width: 100%;
+    max-width: 1280px;
+    /* min-width: 320px; */
+    margin: auto;
+}
+.max-w-half {
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+}
+
+.min-h-100 {
+    min-height: 100vh;
+}
+
+.w-100 {
+    width:100%
+}
+
+.hide {
+    display: none !important;
+}
+
+
+/* Custom */
+
+
+iframe.loader {
+    height: 0px;
+}
+
+
+
+/* Responsive Show/Hide */
+
+/* [custom] MAX 1600 */
+@media screen and (max-width: 1600px) {
+    .max-show {
+      display: block;
+    }
+    .max-hide {
+      display: none;
+    }
+}
+
+/* [XL] MAX 1280 */
+@media screen and (max-width: 1280px) {
+    .xl-show {
+      display: block;
+    }
+    .xl-hide {
+      display: none;
+    }
+}
+/* [LG] MAX 1024 */
+@media screen and (max-width: 1024px) {
+    .lg-show {
+      display: block !important;
+    }
+    .lg-hide {
+      display: none;
+    }
+}
+/* [MD] MAX 768 */
+@media screen and (max-width: 768px) {
+    .md-show {
+      display: block;
+    }
+    .md-hide {
+      display: none;
+    }
+}
+/* [SM] MAX 568 */
+@media screen and (max-width: 568px) {
+    .sm-show {
+      display: block;
+    }
+    .sm-hide {
+      display: none;
+    }  
+}
+/* [XS] MAX 480 */
+@media screen and (max-width: 480px) {
+    .xs-show {
+      display: block;
+    }
+    .xs-hide {
+      display: none;
+    }
+}
+/* [XXS] MAX 360 */
+@media screen and (max-width: 360px) {
+    .xxs-show {
+      display: block;
+    }
+    .xxs-hide {
+      display: none;
+    }
+}

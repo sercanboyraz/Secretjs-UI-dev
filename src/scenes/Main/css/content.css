@@ -1,0 +1,750 @@
+/* Selenian - landing.css */
+
+
+
+
+/* Custom */
+
+.header-parallax-wrapper {
+    /* padding-top: 100px; */
+    margin-top: -100px;
+    height: 100vh;
+    width: 100%;
+    min-height: 640px;
+    max-height: 1368px;
+    position: absolute;  
+    transition: all ease 0.3s;
+    z-index: 1;
+}
+
+.header-parallax-layer-1 {
+    height: 100%;
+    width: 100%; 
+    background-image: url("../files/background-moon.png");
+    /* background-color: #140F30; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    position: absolute;
+    background-position: 60% 50%;
+    transition: all ease 0.3s;
+}
+.header-parallax-layer-2 {
+    height: 100%;
+    width: 100%; 
+    background-image: url("../files/background-stars.jpg");
+    background-color: #140F30;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-attachment: fixed; */
+    position: absolute;
+    background-position: 80% 50%;
+    transition: all ease 0.3s;
+}
+
+.header-parallax-gradient {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    bottom: 0;
+
+    position: absolute;
+    background-image: linear-gradient(transparent 0%, #140F30 100%);
+}
+
+/* HEADER */
+
+.header-section {
+    z-index: 2;
+    /* background-color: #140F30; */
+    padding-top: 100px;
+    margin-top: -100px;
+    color: #fff;
+    /* full height */
+    height: 100vh;
+    min-height: 640px;
+    max-height: 1368px;
+
+    margin-bottom: 48px;
+}
+
+.header-section .container {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px;
+}
+
+.header-section .content-wrapper {
+    width: 100%;
+    max-width: 640px;
+}
+
+.header-section .social-wrapper {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    gap:14px;
+}
+
+/* Images */
+.header-section .social-1 img {
+    content: url("../files/social-1.svg");
+    height: 40px;
+    width: 40px;
+}
+  
+.header-section .social-2 img {
+    content: url("../files/social-2.svg");
+    height: 40px;
+    width: 40px;
+}
+
+.header-section .social-3 img {
+    content: url("../files/social-3.svg");
+    height: 40px;
+    width: 40px;
+}
+
+.header-section .social-1 img:hover {
+    content: url("../files/social-1-pink.svg");
+    height: 40px;
+    width: 40px;
+}
+  
+.header-section .social-2 img:hover {
+    content: url("../files/social-2-pink.svg");
+    height: 40px;
+    width: 40px;
+}
+
+.header-section .social-3 img:hover {
+    content: url("../files/social-3-pink.svg");
+    height: 40px;
+    width: 40px;
+}
+
+/* Sizes */
+
+.header-section .title {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 87px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.header-section .text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+
+.header-section .cta {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    min-height: 56px;
+    color: #fff;
+    background-color: #4E37DA;
+    border-radius: 4px;
+    padding: 12px 24px;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 256px;
+}
+
+.header-section .cta:hover {
+    color: #fff;
+    background-color: #F29472;
+}
+
+/* ABOUT */
+
+.about-section {
+    background-color: #140F30;
+    color: #fff;
+}
+
+.about-section .container {
+    display: flex;
+    padding: 48px 24px;
+    gap:48px;
+}
+
+.about-section .right {
+    width: 100%;
+}
+
+.about-section .left {
+    width: 100%;
+}
+
+/* Sizes */
+.about-section .header {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    max-width: 420px;
+}
+
+.about-section .header-image {
+    /* content: url(".."); */
+    background-color: rgba(217, 217, 217, 0.3);
+    min-height: 255px;
+    width: 100%;
+    margin-top: 32px;
+}
+.about-section .header-image.mobile {
+    display: none;
+}
+
+.about-section .text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.about-section .text-highlight {
+    font-size: 24px; 
+    font-style: italic; 
+    font-weight: 500;
+}
+
+/* NETWORKS */
+
+.networks-section {
+    background-color: #140F30;
+    color: #fff;
+}
+
+.networks-section .container {
+    padding: 48px 24px;
+}
+
+.networks-section .cards {
+    display: flex;
+    gap: 24px;
+}
+
+.networks-section .card {
+    padding: 32px 40px 40px;
+    /* padding: 24px; */
+    width: 100%;
+    background: rgb(78,55,218);
+    background: linear-gradient(315deg, rgba(78,55,218,0.2) 0%, rgba(242,148,114,0.2) 50%, rgba(78,55,218,0.2) 100%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.networks-section .card .link{
+    margin-top: auto;
+    color: #4E37DA;
+}
+
+.networks-section .card .link:hover{
+    color: #fff;
+}
+
+.networks-section .title{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.networks-section .card .header{
+    display: flex;
+    align-items: center;
+}
+.networks-section .card .header-title{
+    font-size: 20px;
+    margin-left: 16px;
+    font-weight: 400;
+}
+
+/* Images */
+.networks-section img.logo-1 {
+    content: url("../files/secret-logo.svg");
+    height: 52px;
+}
+
+.networks-section img.logo-2 {
+    content: url("../files/atom-logo.svg");
+    height: 52px;
+}
+
+.networks-section .main-title {
+    font-size: 20px;
+    padding-bottom: 32px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.networks-section .text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+
+    margin-top: 34px;
+    margin-bottom: 50px;
+}
+.networks-section .link {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+/* Roadmap */
+
+.roadmap-section {
+    background-color: #fff;
+    color: #111;
+    overflow: hidden;
+}
+.roadmap-section .container {
+    padding: 48px 24px;
+    position: relative;
+}
+
+
+.roadmap-section .header {
+    margin-bottom: 48px;
+}
+
+.roadmap-section .slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px 0px;
+    gap: 6px;
+    position: absolute;
+    z-index: 50;
+    right: 0px;
+    margin: 36px 24px 24px;
+}
+
+
+.roadmap-section .header .title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+.roadmap-section .text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    max-width: 700px;
+}
+
+/* Images */
+.roadmap-section .slider-controls .previous img {
+    content: url("../files/slide-prev.svg");
+    height: 16px;
+}
+.roadmap-section .slider-controls .next img {
+    content: url("../files/slide-next.svg");
+    height: 16px;
+}
+
+.roadmap-section .slider-controls .next,
+.roadmap-section .slider-controls .previous {
+    height: 32px;
+    width: 32px;
+    background-color: #4E37DA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity ease 0.3s;
+
+}
+
+.roadmap-section .slider-controls .next:hover,
+.roadmap-section .slider-controls .previous:hover {
+    background-color: #F29472;
+    color:#fff;
+
+}
+
+.roadmap-section .slider-controls .next:disabled,
+.roadmap-section .slider-controls .previous:disabled {
+    opacity: 0.2;
+
+}
+
+/* slider style */
+
+.slide .border {
+    border-bottom: 2px solid #ddd;
+    height: 0px;
+}
+
+.slide .hover-border {
+    border-bottom: 4px solid transparent;
+    margin-right: auto;
+    transition: border ease 0.3s;
+    margin-bottom: -2px;
+    z-index: 1;
+}
+
+.slide.tns-slide-active:hover .hover-border {
+    border-bottom: 4px solid #4E37DA;
+}
+
+
+.slide .step {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+.slide .quarter {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.slide .title {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 24px;
+}
+.slide .text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 24px;
+
+    margin-right: 24px;
+    max-width: 520px;
+}
+
+/* Slider */
+
+.slide {
+    opacity: 0.4;
+    transition: opacity ease 0.3s;
+}
+
+#my-slider > .tns-slide-active {
+    opacity: 1;
+}
+
+/* second item opacity */
+.hover-border {
+    border-bottom: 4px solid transparent;
+}
+
+
+.slide.tns-slide-active .hover-border {
+    border-bottom: 4px solid #4E37DA;
+}
+
+/* first active opacity */
+#my-slider > .tns-slide-active ~ .tns-slide-active {
+    opacity: 0.4;
+}
+
+#my-slider > .tns-slide-active ~ .tns-slide-active .hover-border {
+    border-bottom: 4px solid transparent;
+}
+
+#my-slider > .tns-slide-active:hover {
+    opacity: 1;
+}
+
+#my-slider > .tns-slide-active:hover .hover-border {
+
+    border-bottom: 4px solid #4E37DA;
+}
+
+
+.overflow-hidden {
+    overflow: hidden;
+}
+.tns-ovh {
+    overflow: inherit !important;
+}
+
+
+/* Section Sizes */
+.header-section .container {
+    padding: 96px 48px;
+}
+.about-section .container {
+    padding: 65px 48px;
+}
+.networks-section .container {
+    padding: 96px 48px 128px;
+}
+
+.roadmap-section .container {
+    padding: 120px 48px 160px;
+}
+.roadmap-section .header {
+    margin-bottom: 72px;
+}
+
+
+.navigation .container {
+    padding: 0px 24px;
+}
+
+
+/* Responsive */
+
+/* [custom] MAX 1600 */
+@media screen and (max-width: 1600px) {
+    
+}
+
+/* [XL] MAX 1280 */
+@media screen and (max-width: 1280px) {
+    
+}
+/* [LG] MAX 1024 */
+@media screen and (max-width: 1024px) {
+
+}
+/* [MD] MAX 768 */
+@media screen and (max-width: 768px) {
+    
+    /* Header */
+    .header-section .title {
+        /* font-size: 40px; */
+        /* line-height: 50px; */
+        font-size: 46px;
+        line-height: 60px;
+        margin-bottom: 12px;
+    }
+    .header-section .text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .header-section .cta {
+        font-size: 16px;
+        margin-bottom: 24px;
+        min-height: 48px;
+    }
+
+    .header-section .cta {
+        max-width: 186px;
+    }
+
+    /* About */
+    .about-section .container {
+        flex-direction: column;
+        gap: 24px !important;
+    }
+    .about-section .header {
+        /* font-size: 32px;
+        line-height: 40px; */
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .about-section .text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    /* Network */
+    .networks-section .cards {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .networks-section .card {
+        padding: 24px;
+    }
+    
+    .networks-section .text {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .networks-section .link {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    /* Roadmap */
+    .roadmap-section .title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .roadmap-section .text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .roadmap-section .slide .title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+    .roadmap-section .slide .text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .roadmap-section .header .title {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+
+    /* Section Sizes */
+    .header-section .container {
+        padding: 48px 24px;
+    }
+    .about-section .container {
+        padding: 48px 24px;
+    }
+    .networks-section .container {
+        padding: 48px 24px;
+    }
+    .roadmap-section .container {
+        /* padding: 48px 24px; */
+        padding: 56px 24px;
+    }
+    .roadmap-section .header {
+        margin-bottom: 48px;
+    }
+    .navigation .container {
+        padding: 0px 0px;
+    }
+
+
+    .about-section .header-image.mobile {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    .about-section .header-image.desktop {
+        display: none;
+    }
+
+    .about-section .header {
+        max-width: none;
+    }
+
+}
+/* [SM] MAX 568 */
+@media screen and (max-width: 568px) {
+
+    .header-parallax-layer-2 {    
+        background-position: 80% 50%;
+        
+    }
+    .header-parallax-layer-1 {
+        background-position: 65% 120px;
+    }
+
+    .roadmap-section .slider-controls {
+        display: none;
+    }
+
+}
+/* [XS] MAX 480 */
+@media screen and (max-width: 480px) {
+    
+
+    .header-section .container {
+        padding: 24px 24px 48px;
+    }
+
+    .header-section .title {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 12px;
+    }
+    .header-section .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .about-section .header {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .about-section .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .about-section .text-highlight {
+        font-size: 18px;
+    }
+
+    .networks-section .card .header-title {
+        font-size: 18px;
+    }
+    .networks-section .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    
+    .roadmap-section .header .title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+    .roadmap-section .slide .title {
+        margin-bottom: 8px;
+        margin-top: 24px;
+    }
+
+    .roadmap-section .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .roadmap-section .slide .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .slide .quarter {
+        font-size: 16px;
+    }
+
+    /* Network cards */
+    .networks-section .container {
+        padding: 48px 16px;
+    }
+    .networks-section .title {
+        margin-left: 8px;
+    }
+    .networks-section .cards {
+        gap: 8px;
+    }
+
+
+}
+/* [XXS] MAX 360 */
+@media screen and (max-width: 360px) {
+    .header-section .title {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 12px;
+    }
+}

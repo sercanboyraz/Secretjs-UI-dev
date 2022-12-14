@@ -1,0 +1,234 @@
+/* ==========================================================================
+    GRIDLEX - MINI
+    Just a Flexbox Grid System - v. 2.7.1 - mini
+========================================================================== */
+[class~="grid"],
+[class*="grid-"],
+[class*="grid_"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+}
+
+[class~="col"],
+[class*="col-"],
+[class*="col_"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  max-width: 100%;
+}
+
+[class~="col"],
+[class*="col_"] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+[class*="col-"] {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+[class~="grid"][class~="col"],
+[class~="grid"][class*="col-"],
+[class~="grid"][class*="col_"],
+[class*="grid-"][class~="col"],
+[class*="grid-"][class*="col-"],
+[class*="grid-"][class*="col_"],
+[class*="grid_"][class~="col"],
+[class*="grid_"][class*="col-"],
+[class*="grid_"][class*="col_"] {
+  margin: 0;
+  padding: 0;
+}
+
+/************************
+    HELPERS SUFFIXES
+*************************/
+[class*="grid-"][class*="-gutter"] {
+  margin: 0 -5px;
+}
+
+[class*="grid-"][class*="-gutter"] > [class~="col"],
+[class*="grid-"][class*="-gutter"] > [class*="col-"] {
+  padding: 0 5px 10px;
+}
+
+[class*="grid-"][class*="-wrap"] {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+[class*="grid-"][class*="-center"] {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+[class*="grid-"][class*="-right"] {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: auto;
+}
+
+[class*="grid-"][class*="-top"] {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+[class*="grid-"][class*="-middle"] {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+[class*="grid-"][class*="-bottom"] {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+[class*="grid-"][class*="-reverse"] {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+[class*="grid-"][class*="-column"] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+[class*="grid-"][class*="-column"] > [class*="col-"] {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+[class*="grid-"][class*="-column-reverse"] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+[class*="grid-"][class*="-spaceBetween"] {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+[class*="grid-"][class*="-spaceAround"] {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+[class*="grid-"][class*="-equalHeight"] > [class~="col"],
+[class*="grid-"][class*="-equalHeight"] > [class*="col-"],
+[class*="grid-"][class*="-equalHeight"] > [class*="col_"] {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+[class*="grid-"][class*="-equalHeight"] > [class~="col"] > *,
+[class*="grid-"][class*="-equalHeight"] > [class*="col-"] > *,
+[class*="grid-"][class*="-equalHeight"] > [class*="col_"] > * {
+  height: 100%;
+}
+
+[class*="grid-"][class*="-noBottom"] > [class~="col"],
+[class*="grid-"][class*="-noBottom"] > [class*="col-"],
+[class*="grid-"][class*="-noBottom"] > [class*="col_"] {
+  padding-bottom: 0;
+}
+
+[class*="col-"][class*="-top"] {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+[class*="col-"][class*="-middle"] {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+[class*="col-"][class*="-bottom"] {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+[class*="col-"][class*="-first"] {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+[class*="col-"][class*="-last"] {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/************************
+    HIDING COLS
+*************************/
+@media (max-width: 1600px) {
+  [class*="xxl-hidden"] {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  [class*="xl-hidden"] {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  [class*="lg-hidden"] {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  [class*="md-hidden"] {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  [class*="sm-hidden"] {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  [class*="xs-hidden"] {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  [class*="xxs-hidden"] {
+    display: none;
+  }
+}
+/*# sourceMappingURL=gridlex.css.map */

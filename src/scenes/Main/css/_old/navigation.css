@@ -1,0 +1,265 @@
+/* Selenian - navigation.css */
+
+/* Fix */
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation */
+
+.navigation {
+  z-index: 99;
+  position: sticky;
+  top: 0px;
+
+  transition: top ease 0.3s;
+}
+
+.navigation .container {
+  display: flex;
+  height: 100px;
+}
+
+
+/* Items */
+
+.navigation .brand {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.navigation .menu {
+  display: flex;
+}
+
+/* Dropdown */
+
+.navigation .dropdown {
+  display: flex;
+}
+
+.navigation .dropdown-content {
+  display: flex;
+}
+
+.navigation .dropdown-cta {
+  display: flex;
+}
+
+.navigation .cta {
+  display: flex;
+}
+
+/* Buttons */
+.navigation .link,
+.navigation .button {
+  white-space: nowrap;
+}
+
+.navigation .link,
+.navigation .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+
+  min-height: 48px;
+  padding: 12px 24px;
+  margin: auto;
+}
+
+/* Images */
+.navigation .link.logo img {
+  content: url("../files/logo-desktop-white.svg");
+  height: 40px;
+}
+
+.navigation .button.icon img {
+  content: url("../files/menu-icon-white.svg");
+  height: 4px;
+}
+
+/* Fixes */
+.navigation .button.icon {
+  margin: 0px;
+}
+
+.navigation .link.logo {
+  padding: 0px;
+}
+
+.navigation .dropdown-cta {
+  padding: 12px 24px;
+}
+
+
+
+/* Button Style 2 */
+.navigation .button.login,
+.navigation .button.lights {
+  height: 32px;
+  min-height: 32px;
+  font-size: 14px;
+  padding: 0px 12px;
+}
+
+.navigation .button.lights {
+  width: 32px;
+  margin-left: 12px;
+}
+
+/* Ellipsis */
+.navigation .button.login {
+  min-width: 32px;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+  display: block;
+  justify-content: flex-start;
+
+}
+
+.navigation .menu.app {
+  min-width: 32px;
+}
+
+
+/* Spacing */
+
+.navigation .menu.homepage,
+.navigation .menu.app {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.navigation .brand {
+  margin-left: 24px;
+}
+
+.navigation .cta {
+  margin-left: 12px;
+}
+
+/* Narrow Menu Links */
+.navigation .dropdown-content .link {
+  padding: 12px 12px;
+}
+
+
+
+/* Hide/Show */
+
+.navigation .dropdown-cta {
+  display: none;
+}
+.navigation .button.icon {
+  display: none;
+}
+
+
+
+/* nav top-0 */
+.navigation.top-0 {
+  top:0px !important;
+}
+
+
+
+/* Responsive */
+
+/* [custom] MAX 1600 */
+@media screen and (max-width: 1600px) {
+  
+}
+
+/* [XL] MAX 1280 */
+@media screen and (max-width: 1280px) {
+  
+}
+/* [LG] MAX 1024 */
+@media screen and (max-width: 1024px) {
+
+
+}
+/* [MD] MAX 768 */
+@media screen and (max-width: 768px) {
+
+  .navigation .dropdown {
+    position: relative;
+  }
+  
+  .navigation .dropdown-content {
+    position: absolute;
+    flex-direction: column;
+    /* align */
+    top: 100%;
+    right: 0px;
+    padding-bottom: 12px;
+    background-color: #000;
+  }
+
+  .navigation .dropdown-content .link {
+    width: 100%;
+    /* align */
+    justify-content: flex-end;
+    padding: 12px 24px;
+  }
+  .navigation .dropdown-content .button {
+    /* align */
+    margin-right: 0px;
+    /* margin-left: 0px; */
+  }
+
+  .navigation .cta {
+    margin-left: 0px;
+  }
+
+  /* Dropdown Hide/Show */
+  .navigation .dropdown-content {
+    display: none;
+  }
+  
+  .navigation .dropdown .dropdown-content.show {
+    display: flex;
+  }
+
+  /* Hide/Show */
+  .navigation .button.icon {
+    display: flex;
+  }
+  
+}
+/* [SM] MAX 568 */
+@media screen and (max-width: 568px) {
+
+}
+/* [XS] MAX 480 */
+@media screen and (max-width: 480px) {
+  
+  /* logo size */
+  .navigation .link.logo img {
+    /* height: 30px; */
+    /* content: url("/files/logo-mobile-white.svg"); */
+  }
+  /* spacing */
+  .navigation .menu.homepage {
+    margin-right: 0;
+  }
+
+  /* Hide/Show */
+  .navigation .dropdown-cta {
+    display: flex;
+  }
+  .navigation .cta {
+    display: none;
+  }
+
+}
+/* [XXS] MAX 360 */
+@media screen and (max-width: 360px) {
+
+}

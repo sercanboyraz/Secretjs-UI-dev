@@ -1,0 +1,274 @@
+/* Selenian - footer.css */
+
+
+
+/* Custom */
+
+.footer {
+    margin-top: auto;
+    background-color: #140F30;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.footer .left {
+    width: 40%;
+    background-color: #140F30;
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+}
+.footer .right {
+    width: 60%;
+    display: flex;
+    padding: 42px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* LEFT */
+
+/* Images */
+.footer .left .social-1 img {
+    content: url("../files/social-1.svg");
+    height: 40px;
+    width: 40px;
+}
+  
+.footer .left .social-2 img {
+    content: url("../files/social-2.svg");
+    height: 40px;
+    width: 40px;
+}
+
+.footer .left .social-3 img {
+    content: url("../files/social-3.svg");
+    height: 40px;
+    width: 40px;
+}
+
+.footer .left .social-1 img:hover {
+    content: url("../files/social-1-pink.svg");
+    height: 40px;
+    width: 40px;
+}
+  
+.footer .left .social-2 img:hover {
+    content: url("../files/social-2-pink.svg");
+    height: 40px;
+    width: 40px;
+}
+
+.footer .left .social-3 img:hover {
+    content: url("../files/social-3-pink.svg");
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.footer .left .logo img {
+    content: url("/files/footer-logo.svg");
+    height: 77px;
+}
+
+.footer .left .logo {
+    margin-bottom: auto;
+}
+
+.footer .left .socials {
+    display: flex;
+    margin-bottom: 24px;
+    gap: 14px;
+}
+
+.footer .left .copyright {
+    color: #fff;
+    opacity: 0.3;
+
+    font-size: 16px;
+}
+
+
+/* RIGHT */
+.footer .right .subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+/* TEXT */
+.footer .right .subscribe .title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.footer .right .subscribe .subtitle {
+    color: #fff;
+    font-size: 20px;
+    /* margin-top: 12px; */
+    line-height: 30px;
+}
+
+.footer .right .subscribe .sendmail {
+    margin-top: 24px;
+}
+
+.footer .right .subscribe .privacy {
+    color: #fff;
+    margin-top: 16px;
+    line-height: 26px;
+}
+.footer .right .subscribe .link {
+    color: #fff;
+}
+
+.footer .right .subscribe .privacy span,
+.footer .right .subscribe .link {
+    opacity: 0.3;
+}
+
+.footer .right .subscribe .link:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.footer .right .sendmail {
+    display: flex;
+}
+
+.footer .right .input-email {
+    color: #fff;
+    background-color: #140F30;
+    border: 1px solid #fff;
+    border-right: none;
+    padding: 12px 24px;
+    width: 100%;
+    opacity: 0.3;
+    height: 56px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+
+.footer .right .input-email::placeholder {
+    color: #fff;
+}
+
+.footer .right .input-email:-ms-input-placeholder {
+    color: #fff;
+}
+
+.footer .right .input-email::-ms-input-placeholder {
+    color: #fff;
+}
+
+.footer .right .input-email:focus {
+    opacity: 1;
+}
+
+.footer .right .input-submit {
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    background-color: #4E37DA;
+    cursor: pointer;
+    height: 56px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.footer .right .input-submit:hover {
+    color: #fff;
+    background-color: #F29472;
+}
+
+/* Responsive */
+
+/* [custom] MAX 1600 */
+@media screen and (max-width: 1600px) {
+    
+}
+
+/* [XL] MAX 1280 */
+@media screen and (max-width: 1280px) {
+    
+}
+/* [LG] MAX 1024 */
+@media screen and (max-width: 1024px) {
+
+    .footer .right .sendmail {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .right .input-email {
+        border: 1px solid;
+        border-bottom: none;
+    }
+
+    .footer .right .input-email {
+        background-color: #140F30;
+        border: 1px solid #fff;
+        margin-bottom: 8px;
+        border-radius: 4px;
+    }
+    .footer .right .input-submit {
+        border-radius: 4px;
+    }
+
+}
+/* [MD] MAX 768 */
+@media screen and (max-width: 768px) {
+    .footer .container .left {
+        width: 100%;
+        align-items: center;
+    }
+    .footer .container .right {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer .container .left .logo {
+        display: none;
+    }
+    .footer .container .right .subscribe {
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    
+    .footer .right,
+    .footer .right .input-email {
+        background-color: #111;
+    }
+
+    .footer .left .socials {
+        margin-bottom: 32px;
+    }
+    
+}
+/* [SM] MAX 568 */
+@media screen and (max-width: 568px) {
+
+    .footer .right .input-email {
+        width: 100%;
+    }
+    .footer .right .input-submit {
+        width: 100%;
+    }
+
+}
+/* [XS] MAX 480 */
+@media screen and (max-width: 480px) {
+    
+}
+/* [XXS] MAX 360 */
+@media screen and (max-width: 360px) {
+
+}

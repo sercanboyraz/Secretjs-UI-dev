@@ -1,0 +1,89 @@
+/* Theme - theme.css */
+
+/* Custom */
+
+html, body {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+  font-weight: 300 !important;
+}
+
+/* Theme */
+
+.button-style-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  
+  padding: 12px 24px;
+  border-radius: 4px;
+  min-height: 48px;
+
+  color: #fff;
+  background-color: #4E37DA;
+  border: none;
+  
+  cursor: pointer;
+}
+
+.button-style-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  
+  padding: 12px 24px;
+  border-radius: 4px;
+  min-height: 48px;
+
+  color: #4E37DA;
+  border: 1px solid #4E37DA;
+  
+  cursor: pointer;
+}
+
+
+body {
+  background-color: #fff;
+  transition: background-color ease 0.3s;
+}
+
+body.dark {
+  background-color: #111;
+}
+
+
+/* Responsive */
+
+/* [XXL] MAX 1600 */
+@media screen and (max-width: 1600px) {
+    
+}
+/* [XL] MAX 1280 */
+@media screen and (max-width: 1280px) {
+    
+}
+/* [LG] MAX 1024 */
+@media screen and (max-width: 1024px) {
+
+}
+/* [MD] MAX 768 */
+@media screen and (max-width: 768px) {
+
+}
+/* [SM] MAX 568 */
+@media screen and (max-width: 568px) {
+
+}
+/* [XS] MAX 480 */
+@media screen and (max-width: 480px) {
+    
+}
+/* [XXS] MAX 360 */
+@media screen and (max-width: 360px) {
+
+}

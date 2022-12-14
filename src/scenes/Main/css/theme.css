@@ -1,0 +1,56 @@
+/* Selenian - theme.css */
+
+* {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+    /* transition: all ease 0.2s; */
+}
+
+
+/* Custom */
+
+
+
+/* Responsive */
+
+/* [custom] MAX 1600 */
+@media screen and (max-width: 1600px) {
+    
+}
+
+/* [XL] MAX 1280 */
+@media screen and (max-width: 1280px) {
+    
+}
+/* [LG] MAX 1024 */
+@media screen and (max-width: 1024px) {
+
+}
+/* [MD] MAX 768 */
+@media screen and (max-width: 768px) {
+
+}
+/* [SM] MAX 568 */
+@media screen and (max-width: 568px) {
+
+}
+/* [XS] MAX 480 */
+@media screen and (max-width: 480px) {
+    
+}
+/* [XXS] MAX 360 */
+@media screen and (max-width: 360px) {
+
+}

@@ -1,0 +1,358 @@
+/* Navigation - navigation.css */
+
+/* Sidebar */
+
+.sidebar-wrapper {
+    z-index: 999;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+    left:100%;
+    opacity: 0;
+    transition: opacity ease 0.5s;
+}
+
+.sidebar-content {
+    position: fixed;
+    overflow-y: auto; 
+    right: -300px;
+    width:300px; 
+    height: 100%; 
+    background-color: #fff;
+    transition: right ease 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark .sidebar-content {
+    background-color: #111;
+}
+
+/* Show Sidebar */
+.sidebar-wrapper.show .sidebar-overlay {
+    left: 0px;
+    opacity: 1;
+}
+
+.sidebar-wrapper.show .sidebar-content {
+    right: 0px;
+}
+
+/* Sidebar Content */
+.sidebar-content-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px 24px;
+    gap: 24px;
+    height: 100px;
+}
+
+.sidebar-content-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 48px;
+    gap: 16px;
+}
+
+.sidebar-content-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px;
+    gap: 24px;
+    margin-top: auto;
+}
+
+/* Sidebar Buttons */
+.sidebar-launch-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.sidebar-link {
+    color: #111;
+    font-size: 32px;
+}
+
+.dark .sidebar-link {
+    color: #fff;
+}
+
+.sidebar-link:hover {
+    color: #4E37DA;
+}
+
+/* Navigation */
+.navigation-wrapper {
+    color: #111;
+    background-color: #fff;
+    /* border-bottom: 1px solid rgba(17, 17, 17, 0.06); */
+    z-index: 99;
+    position: sticky;
+    top:0;
+    transition: all ease 0.3s;
+}
+
+.dark .navigation-wrapper {
+    color: #fff;
+    background-color: #111;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.08); */
+}
+
+/* Landing page opacity */
+.navigation-wrapper.landing-page {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.dark .navigation-wrapper.landing-page {
+    background-color: rgba(17, 17, 17, 0);
+}
+
+.navigation-wrapper.landing-page.bg-color {
+    background-color: #fff;
+}
+
+.dark .navigation-wrapper.landing-page.bg-color {
+    background-color: #111;
+}
+
+.navigation-content {
+    display: flex;
+    align-items: center;
+    padding: 0px 48px;
+    gap:12px;
+    transition: padding ease 0.3s;
+    height: 100px;
+}
+
+.navigation-brand {
+    margin-right: auto;
+
+    gap:12px;
+}
+
+.navigation-desktop-menu {
+    display: flex;
+    align-items: center;
+    /* gap:12px; */
+}
+
+.navigation-mobile-menu {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.navigation-launch-button {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-app-menu {
+    display: flex;
+    align-items: center;
+    gap:6px;
+    overflow: hidden;
+}
+
+/* Navigation Buttons */
+.navigation-button-style-1,
+.sidebar-button-style-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    padding: 12px 24px;
+    border-radius: 4px;
+    min-height: 48px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #4E37DA;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation-button-style-1:hover,
+.sidebar-button-style-1:hover {
+    background-color: #F29472;
+}
+
+.navigation-button-style-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 12px;
+    border-radius: 4px;
+    min-height: 32px;
+    color: #4E37DA;
+    border: 1px solid #4E37DA;
+    cursor: pointer;
+}
+
+.navigation-button-style-2.epilipsis {
+    min-width: 100px;
+    max-width: 154px;
+    transition: max-width ease 0.3s;
+    /* max-width: 134px; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.navigation-link {
+    color: #111;
+    white-space: nowrap;
+    padding: 12px 12px;
+}
+
+.dark .navigation-link {
+    color: #fff;
+}
+
+.navigation-link:hover {
+    color: #4E37DA;
+}
+
+/* Images */
+
+/* Brand Logo */
+.navigation-brand-logo {
+    content: url(../files/logo-desktop-black.svg);
+    height: 40px;
+    transition: height ease 0.3s;
+}
+.dark .navigation-brand-logo {
+    content: url(../files/logo-desktop-white.svg);
+}
+
+.navigation-mobile-menu-icon {
+    content: url(../files/menu-icon-blue.svg);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.dark .navigation-mobile-menu-icon {
+    /* content: url(/files/menu-icon-white.svg); */
+}
+
+/* Light Mode icons */
+.navigation-lights-icon {
+    content: url(../files/mode-dark.svg);
+    width: 32px;
+    height: 32px;
+    opacity: 0.32;
+
+    cursor: pointer;
+}
+.dark .navigation-lights-icon {
+    content: url(../files/mode-light.svg);
+    opacity: 0.56;
+}
+.navigation-lights-icon:hover {
+    opacity: 0.9;
+}
+
+
+/* Sidebar Icons */
+.sidebar-content-close-icon {
+    content: url(../files/sidebar-close-blue.svg);
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+}
+
+.dark .sidebar-content-close-icon {
+    /* content: url(/files/sidebar-close-white.svg); */
+}
+
+
+/* Homepage AppPage Show/Hide */
+.navigation-wrapper.app-page .navigation-desktop-menu,
+.navigation-wrapper.app-page .navigation-mobile-menu,
+.navigation-wrapper.app-page .navigation-launch-button {
+    display: none;
+}
+
+.navigation-wrapper.landing-page .navigation-app-menu {
+    display: none;
+}
+
+/* Responsive */
+
+.navigation-mobile-menu {
+    display: none;
+}
+.sidebar-launch-button {
+    /* display: none; */
+}
+
+/* [XXL] MAX 1600 */
+@media screen and (max-width: 1600px) {
+    
+}
+/* [XL] MAX 1280 */
+@media screen and (max-width: 1280px) {
+    
+}
+/* [LG] MAX 1024 */
+@media screen and (max-width: 1024px) {
+
+}
+/* [MD] MAX 768 */
+@media screen and (max-width: 768px) {
+
+    .navigation-desktop-menu {
+        display: none;
+    }
+    .navigation-mobile-menu {
+        display: flex;
+    }
+
+    .navigation-content {
+        padding: 0px 24px;
+    }
+
+}
+/* [SM] MAX 568 */
+@media screen and (max-width: 568px) {
+
+}
+/* [XS] MAX 480 */
+@media screen and (max-width: 480px) {
+
+    .navigation-brand-logo {
+        height: 30px;
+    }
+    .navigation-button-style-2.epilipsis {
+        max-width: 134px;
+    }
+
+    .navigation-launch-button {
+        display: none;
+    }
+    .sidebar-launch-button {
+        display: flex;
+    }
+
+    /* .navigation-content {
+        padding: 0px 12px;
+    } */
+
+}
+/* [XXS] MAX 360 */
+@media screen and (max-width: 360px) {
+
+}

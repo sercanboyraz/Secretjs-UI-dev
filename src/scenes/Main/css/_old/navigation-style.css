@@ -1,0 +1,88 @@
+/* Selenian - Navigation Style */
+
+.navigation {
+  /* transition: all ease 0.3s; */
+}
+
+.navigation.bg-color {
+  background-color: #000;
+}
+.navigation.top-0 {
+  background-color: #000;
+}
+
+.navigation:hover {
+  background-color: #000;
+}
+
+/* Main */
+.navigation,
+.navigation .dropdown-content {
+  color: #fff;
+  /* background-color: #000; */
+  transition: all ease 0.3s;
+}
+
+.navigation .dropdown-content {
+  border-radius: 0px 0px 8px 8px;
+}
+
+
+/* Menu Links */
+.navigation .link {
+  color: #fff;
+}
+.navigation .link:hover {
+  color: #4E37DA;
+}
+
+
+/* Menu Icon */
+.navigation .button.icon {
+  color: #fff;
+}
+.navigation .button.icon:hover {
+  color: #F29472;
+}
+
+
+/* Launch */
+.navigation .button.launch {
+  color: #fff;
+  background-color: #4E37DA;
+  border-radius: 4px;
+}
+.navigation .button.launch:hover {
+  color: #fff;
+  background-color: #F29472;
+}
+
+
+/* Login */
+.navigation .button.login {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+
+.navigation .button.login:hover {
+  color: #4E37DA;
+  border: 1px solid #4E37DA;
+}
+
+
+/* Lights */
+
+.navigation .button.lights {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+
+  opacity: 0.5;
+}
+
+.navigation .button.lights:hover {
+  opacity: 1;
+}
+
